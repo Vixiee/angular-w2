@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background: linear-gradient(to left, #ba7dc4, #520ddb);
-  font-family: Comic Sans MS, cursive, sans-serif;
+  background: linear-gradient(to left, #b3d1ff, #ff0bf3);
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
   color: #800080;
 }
 
@@ -12,7 +12,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  background-color: #800080;
+  background-color: #610761;
   transition: background 0.3s ease;
 }
 

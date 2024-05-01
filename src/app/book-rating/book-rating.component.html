@@ -9,15 +9,15 @@
   </p>
   <p>Rating: {{ currentBook.rating }}</p>
 
-  <h2>Rate this book</h2>
+  <h2>Rate book</h2>
   <div class="button-container">
     <button *ngFor="let rating of [1, 2, 3, 4, 5]" (click)="rateBook(rating)">
       {{ rating }}
     </button>
   </div>
 
-  <div *ngIf="currentBook.hasRated">
-    <h2>Update this book</h2>
+  <div *ngIf="currentBook.rating > 0">
+    <h2>Update book</h2>
     <input [(ngModel)]="currentBook.title" placeholder="Title" />
     <input [(ngModel)]="currentBook.description" placeholder="Description" />
     <div *ngFor="let author of currentBook.authors; let i = index">
@@ -38,6 +38,8 @@
 </div>
 
 <div *ngIf="allBooksRated">
-  <button class="restart" (click)="restart()">Дай пак!</button>
-  <button class="finish" (click)="finish()">Писна ми</button>
+  <h2>Приключи</h2>
+  <button class="restart" (click)="restart()">Оцени отново</button>
+  <button class="finish" (click)="finish()">Достатъчно</button>
+
 </div>

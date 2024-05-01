@@ -1,17 +1,17 @@
 body {
-  background-color: #f3e5f5;
+  background-color: #d3ffe9;
 }
 
 div {
-  border: 1px solid #800080;
+  border: 1px solid #085b69;
   padding: 10px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #800080;
-  background-color: #e1bee7;
+  color: #043b32;
+  background-color: #eafff5;
 }
 
 h2 {
@@ -26,7 +26,7 @@ p {
 
 button {
   margin: 5px;
-  background-color: #800080;
+  background-color: #d120ab;
   color: white;
 }
 
@@ -39,7 +39,7 @@ button {
 input {
   display: block;
   margin: 5px 0;
-  border: 1px solid #800080;
+  border: 1px solid #572177;
 }
 
 .restart,
@@ -51,10 +51,10 @@ input {
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
-  background: #800080;
+  background: #3fe1f7;
 }
 
 .restart:hover,
 .finish:hover {
-  background: #4b0082;
+  background: #c4219b;
 }
