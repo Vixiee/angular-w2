@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(to left, #ba7dc4, #520ddb);
+  font-family: Comic Sans MS, cursive, sans-serif;
+  color: #800080;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #800080;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b0082;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #800080;
+}

@@ -1,0 +1,60 @@
+body {
+  background-color: #f3e5f5;
+}
+
+div {
+  border: 1px solid #800080;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #800080;
+  background-color: #e1bee7;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  background-color: #800080;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+input {
+  display: block;
+  margin: 5px 0;
+  border: 1px solid #800080;
+}
+
+.restart,
+.finish {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: #800080;
+}
+
+.restart:hover,
+.finish:hover {
+  background: #4b0082;
+}

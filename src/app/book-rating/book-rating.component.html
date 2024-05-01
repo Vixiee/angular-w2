@@ -1,0 +1,43 @@
+<div *ngIf="currentBook && !allBooksRated">
+  <h2>{{ currentBook.title }}</h2>
+  <p>{{ currentBook.description }}</p>
+  <p>
+    Authors:
+    <span *ngFor="let author of currentBook.authors; let isLast = last"
+      >{{ author }}{{ isLast ? "" : ", " }}</span
+    >
+  </p>
+  <p>Rating: {{ currentBook.rating }}</p>
+
+  <h2>Rate this book</h2>
+  <div class="button-container">
+    <button *ngFor="let rating of [1, 2, 3, 4, 5]" (click)="rateBook(rating)">
+      {{ rating }}
+    </button>
+  </div>
+
+  <div *ngIf="currentBook.hasRated">
+    <h2>Update this book</h2>
+    <input [(ngModel)]="currentBook.title" placeholder="Title" />
+    <input [(ngModel)]="currentBook.description" placeholder="Description" />
+    <div *ngFor="let author of currentBook.authors; let i = index">
+      <input [(ngModel)]="currentBook.authors[i]" placeholder="Author" />
+    </div>
+    <button
+      (click)="
+        updateBook(
+          currentBook.title,
+          currentBook.description,
+          currentBook.authors
+        )
+      "
+    >
+      Update
+    </button>
+  </div>
+</div>
+
+<div *ngIf="allBooksRated">
+  <button class="restart" (click)="restart()">Дай пак!</button>
+  <button class="finish" (click)="finish()">Писна ми</button>
+</div>
